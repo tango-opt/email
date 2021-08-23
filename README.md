@@ -9,7 +9,7 @@
 - Введите ```npm i```
 - После успешной установки окно команд должно выглядеть примерно так:
 
-![success]('https://github.com/tango-opt/email/blob/main/installation/4.png')
+![success]('https://raw.githubusercontent.com/tango-opt/email/main/installation/1.png')
 
 ## Использование
 
