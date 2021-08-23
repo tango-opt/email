@@ -1,0 +1,20 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "simple email-builder from template",
+  "main": "data.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "scripts": {
+    "build": "npx prettier --write ./src/ && eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [
+    "eleventy",
+    "email"
+  ],
+  "author": "subbotin klim <subbotin_klim@pm.me>",
+  "license": "MIT"
+}
