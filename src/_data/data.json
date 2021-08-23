@@ -12,6 +12,19 @@
   "bg": "bg.gif",
   "collections": [
     {
+      "title": "Tango Patchwork",
+      "banner": "",
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% хлопок"
+        }
+      ],
+      "secondary_description": "",
+      "item_lines": "",
+      "link": ""
+    },
+    {
       "title": "Комплект штор Tango Velluto",
       "banner": null,
       "main_description": [
