@@ -3,13 +3,10 @@
 ## Установка
 
 - Скачайте и установите [NodeJS LTS](https://nodejs.org/ru/)
-- Скачайте [файлы сборщика](https://github.com/tango-opt/email) во вкладке Code > Download ZIP
+- Cкачайте [файлы сборщика](https://github.com/tango-opt/email) во вкладке Code > Download ZIP
 - Распакуйте архив
 - Зажав Shift и кликнув правой кнопкой мыши в папке с распакованными файлами откройте командную строку
 - Введите ```npm i```
-- После успешной установки окно команд должно выглядеть примерно так:
-
-![success]('https://raw.githubusercontent.com/tango-opt/email/main/installation/1.png')
 
 ## Использование
 
