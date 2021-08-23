@@ -1,0 +1,196 @@
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<style>
+	body{widht:100%; height:100%; padding:0px; margin:0px;}
+</style>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; background-image: url('//ttango.ru/newsletter/{{data.date}}/{{data.bg}}'); padding: 0px; margin: 0px;">
+	<tbody style="background-image: url('http://ttango.ru/newsletter/{{data.bg}}');">
+		<tr>
+			<td height="30">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 664px;">
+					<tbody>
+						<tr>
+							<td width="14">&nbsp;</td>
+							<td align="left"><br></td>
+							<td align="right"><span style="font-family: arial; font-size: 11px; color: #232328; line-height: 1.4;">Не отображается письмо? Веб-версия по <a href="http://ttango.ru/newsletter/{{ data.date }}/" target="_blank" style="color: #c8193c;">ссылке</a></span></td>
+							<td width="14">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 664px;">
+					<tbody>
+						<tr>
+							<td colspan="6" height="16">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="3">&nbsp;</td>
+							<td align="left" width="280"><a href="http://ttango.ru/" target="_blank"><img src="http://ttango.ru/newsletter/logo_2_tango.png" border="0" width="175" height="62" style="display: block;" /></a></td>
+							<td align="right"><span style="font-family: arial; font-size: 13px; color: #c8193c; line-height: 1.4;"><a href="http://ttango.ru/catalog/" target="_blank" style="color: #c8193c;">Каталог товаров</a></span></td>
+							<td align="right" width="85"><span style="font-family: arial; font-size: 13px; color: #c8193c; line-height: 1.4;"><a href="http://ttango.ru/news/" target="_blank" style="color: #c8193c;">Новости</a></span></td>
+							<td align="right" width="90"><span style="font-family: arial; font-size: 13px; color: #c8193c; line-height: 1.4;"><a href="http://ttango.ru/contacts.php" target="_blank" style="color: #c8193c;">Контакты</a></span></td>
+							<td width="14">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="6" height="18">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; padding: 0px; margin: 0px; width: 648px;">
+					<tbody>
+						<tr>
+							<td><img src="http://ttango.ru/newsletter/{{ data.date }}/{{ data.main.img }}" border="0" width="664" height="{{ data.main.height }}" style="display: block;" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #E1E1E1; border-left: 1px solid #E1E1E1; border-right: 1px solid #E1E1E1;">
+					<tbody>
+						<tr>
+							<td bgcolor="white" width="1">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 660px;">
+									<tbody>
+										{% if data.main.description.enable %}										
+										<tr>
+											<td style="background-color: #FFFFFF;" width="5">&nbsp;</td>
+											<td><table style="width: 100%; background-color: #FFFFFF;"><tr><td><br><span style="color: #232328; font-size: 17px; font-family: Arial; font-weight: bold;">{{ data.main.description.title | safe }}</span><br><br><span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;">{{
+												data.main.description.text | safe
+											}}</span><br><br></td><td>&nbsp;&nbsp;&nbsp;</td><td width="1%"></td></tr></table></td>
+											<td style="background-color: #FFFFFF;" width="10">&nbsp;</td>
+										</tr>
+										{% endif %}
+										{% if data.collections.length > 0 %}
+											{% for collection in data.collections %}
+										{% if collection.banner %}
+										<tr>
+											<td colspan="3">
+												<img src="//ttango.ru/newsletter/{{ data.date }}/{{ collection.banner }}" width="664">
+											</td>
+										</tr>
+										{% endif %}
+										<tr>
+											<td style="background-color: #e9e9e9;" width="5">&nbsp;</td>
+											<td style="background-color: #e9e9e9;"><table style="width: 100%; background-position:top right; background-repeat:no-repeat;"><tr><td><br>
+											<span style="color: #232328; font-size: 16px; font-family: Arial; font-weight: bold;">{{ collection.title }}</span><br>
+											{% if collection.main_description.length > 0 %}
+												{% for description in collection.main_description %}
+													<span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{ description.key }}:</strong>&nbsp;{{ description.value }}</span>
+												{% endfor %}
+											{% endif %}
+											<br>
+											{% if collection.secondary_description.length > 0 %}
+												{% for line in collection.secondary_description %}
+													<span style="color: #000000; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{ line }}</strong></span>
+												{% endfor %}
+											{% endif %}
+											<br><br></td><td>&nbsp;&nbsp;&nbsp;</td><td width="1%"></td></tr></table></td>
+											<td style="background-color: #e9e9e9;" width="10">&nbsp;</td>
+										</tr>
+										<tr>
+											<td style="border-top: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; background-color:#FFFFFF;" width="5">&nbsp;</td>
+											<td style="border-top: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; background-color:#FFFFFF;"><br />
+												<table cellpadding="0" cellspacing="0">
+													<tbody>
+														<!-- Блок 2 товар / НАЧАЛО -->
+														{% if collection.item_lines.length > 0 %}
+														{% for line in collection.item_lines  %}
+														<tr>
+															<td><img src="http://ttango.ru/newsletter/{{ data.date }}/{{ line.first_img }}" width="310" height="230" style="display: block;"><span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;"><strong>{{ line.first_description }}</strong><br></span></td>
+															<td>&nbsp;&nbsp;&nbsp;</td>
+															{% if line.second_description == "" or line.second_img == "" %}
+																<td colspan="1" width="310">&nbsp;&nbsp;&nbsp;</td>
+															{% else %}
+																<td><img src="http://ttango.ru/newsletter/{{ data.date }}/{{line.second_img}}" width="310" height="230" style="display: block;"><span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;"><strong>{{line.second_description}}</strong><br></span></td>
+															{% endif %}
+														</tr>
+														<tr>
+															<td colspan="3">&nbsp;</td>
+														</tr>
+														<!-- Блок 2 товар / КОНЕЦ -->
+														
+														{% endfor %}
+														{% endif %}
+														<tr>
+															<td colspan="3" align="center"><br><a href="http://ttango.ru/search.php?q={{ collection.link }}" style="padding: 12px 50px 12px 50px; background-color: #fdb81a; color: #ffffff; font-family: Arial;text-decoration: none; font-weight: bold; border-radius: 30px;" target="_blank">ПЕРЕЙТИ В КАТАЛОГ</a><br><br><br><br></td>
+														</tr>
+														<tr>
+															<td colspan="3">&nbsp;</td>
+														</tr>
+														<!-- Блок 2 товар / КОНЕЦ -->
+														
+													</tbody>
+												</table>
+											</td>
+											
+											<td style="border-top: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; background-color:#FFFFFF;" width="10">&nbsp;</td>
+										</tr>
+									{% endfor %}
+										{% endif %}
+								
+										
+										<tr>
+											<td colspan="3" align="center" style="background-image:url(http://ttango.ru/newsletter/video/1.gif); border-bottom: 1px solid #E1E1E1;"><br><br><a href="http://ttango.ru/cooperation_price.php" style="padding: 12px 50px 12px 50px; background-color: #fdb81a; color: #ffffff; font-family: Arial;text-decoration: none; font-weight: bold; border-radius: 30px;" target="_blank">ПОЛУЧИТЬ ПРАЙС-ЛИСТ</a><br><br><br><a href="http://ttango.ru/cooperation.php" style="padding: 12px 50px 12px 50px; background-color: #31a0ff; color: #ffffff; font-family: Arial;text-decoration: none; font-weight: bold; border-radius: 30px;" target="_blank">ПОДРОБНЕЕ О СОТРУДНИЧЕСТВЕ С TANGO</a><br><br><br></td>
+										</tr>
+										<tr style="background-image: url('http://ttango.ru/newsletter/wave-1.gif');">
+											<td style="border-bottom: 1px solid #E1E1E1;" width="5">&nbsp;</td>
+											<td style="border-bottom: 1px solid #E1E1E1;"><br><span style="color: #555555; font-size: 14px; font-family: Arial; line-height: 18px;">За движением нашего ассортимента следить теперь стало удобнее. Система покажет на конкретную дату или период &#8212; новинки, какой товар поступил в продажу, какой закончился.<br><a href="http://ttango.ru/add_modules/modification_catalog/mod_catalog.php" target="_blank" style="color: #c8193c;">Система отслеживания изменений в каталоге</a></span><br><br></td>
+											<td style="border-bottom: 1px solid #E1E1E1;" width="10">&nbsp;</td>
+										</tr>
+										<tr>
+											<td style="background-color:#FFFFFF;" width="5">&nbsp;</td>
+											<td style="background-color:#FFFFFF;"><br><span style="color: #555555; font-size: 14px; font-family: Arial; line-height: 18px;">По интересующим вас вопросам вы всегда можете обратиться к нашим менеджерам:</span><br><br><span style="color: #232328; font-size: 17px; font-family: Arial; font-weight: bold;">&nbsp;+7 (495) 740-80-70, +7 (925) 600-60-00</span><br><br><span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;">Звоните и <a href="http://ttango.ru/os.php" target="_blank" style="color: #c8193c;">пишите</a> нам по любым вопросам.</span><br><br></td>
+											<td style="background-color:#FFFFFF;" width="10">&nbsp;</td>
+										</tr>
+										<tr>
+											<td style="border-top: 1px solid #E1E1E1; background-color:#FFFFFF;" width="5">&nbsp;</td>
+											<td style="border-top: 1px solid #E1E1E1; background-color:#FFFFFF;"><br>
+												<table>
+													<tbody>
+														<tr>
+															<td width="50%"><span style="color: #555555; font-size: 11px; font-family: Arial; line-height: 18px;">Вы получили это письмо, так как подписались на рассылку. Чтобы не пропускать наши новости — добавьте адрес <a href="mailto:tango@ttango.ru" style="color: #c8193c;">tango@ttango.ru</a> в адресную книгу.</span></td>
+															<td width="20%">&nbsp;</td>
+															<td valign="top" width="30%"><span style="color: #555555; font-size: 11px; font-family: Arial; line-height: 18px;">Вы можете <a href="#UNSUBSCRIBE_LINK#" style="color: #c8193c;">отписаться</a>, но мы будем скучать.</span></td>
+														</tr>
+													</tbody>
+												</table>
+											<br></td>
+											<td style="border-top: 1px solid #E1E1E1; background-color:#FFFFFF;" width="10">&nbsp;</td>
+										</tr>
+										<tr>
+											<td style="background-color:#FFFFFF;" width="15">&nbsp;</td>
+											<td style="background-color:#FFFFFF;">&nbsp;</td>
+											<td style="background-color:#FFFFFF;">&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 648px;">
+					<tbody>
+						<tr>
+							<td><img src="http://ttango.ru/newsletter/block_bottom.png" border="0" style="display: block;" /></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 620px;">
+					<tbody>
+						<tr>
+							<td><span style="font-size: 11px; font-family: Arial; line-height: 18px;">Это сообщение было отправлено от Tango на <a href="mailto:#EMAIL_TO#" target="_blank" style="color: #383838; text-decoration: none; margin: 0px; line-height: 1.5; padding: 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif;">#EMAIL_TO#</span></a>.<br>ООО "Кристель" | 2-ая ул. Энтузиастов д. 5, Москва, 107014, Российская Федерация<br></span></td>
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+			</td>
+		</tr>
+	</tbody>
+</table>		

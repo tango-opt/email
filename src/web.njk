@@ -1,0 +1,84 @@
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; padding: 0px; margin: 0px; width: 100%;">
+					<tbody>
+						<tr>
+							<td><img src="http://ttango.ru/newsletter/{{data.date}}/{{ data.main.img }}" width="100%" style="display: block;"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #E1E1E1;">
+					<tbody>
+						<tr>
+							<td width="1">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+									<tbody>	
+										{% if data.main.description.enable == true %}									
+										<tr>
+											<td style="background-color: #FFFFFF;" width="5">&nbsp;</td>
+											<td><table style="width: 100%; background-color: #FFFFFF;"><tr><td><br><span style="color: #232328; font-size: 17px; font-family: Arial; font-weight: bold;">{{data.main.description.title}}</span><br><br><span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;">{{data.main.description.text}}</span><br><br></td><td>&nbsp;&nbsp;&nbsp;</td><td width="1%"></td></tr></table></td>
+											<td style="background-color: #FFFFFF;" width="10">&nbsp;</td>
+										</tr>
+										{% endif %}
+										{# data collection start #}
+										{% for collection in data.collections %}
+										<tr>
+											<td style="background-color: #e9e9e9;" width="5">&nbsp;</td>
+											<td style="background-color: #e9e9e9;"><table><tr><td><br><span style="color: #232328; font-size: 17px; font-family: Arial; font-weight: bold;">{{ collection.title }}</span><br>
+											{% for line in collection.main_description  %}
+												<span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{line.key}}:</strong>&nbsp;{{line.value}}
+											{% endfor %}
+												<br>
+											{% if collection.secondary_description.length > 0 %}
+												{% for line in collection.secondary_description %}
+													<span style="color: #000000; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{ line }}</strong></span>
+												{% endfor %}
+											{% endif %}
+												<br></span><br></td><td>&nbsp;&nbsp;&nbsp;</td><td width="1%"></td></tr></table></td>
+											
+											<td style="background-color: #e9e9e9;" width="10">&nbsp;</td>
+										</tr>
+										{% if collection.item_lines.length > 0 %}
+										<tr>
+											<td style="border-top: 1px solid #E1E1E1;" width="5">&nbsp;</td>
+											<td style="border-top: 1px solid #E1E1E1;"><br>
+												<table cellpadding="0" cellspacing="0">
+													<tbody>
+														{% for line in collection.item_lines %}
+														<tr>
+															<td><img src="http://ttango.ru/newsletter/{{data.date}}/{{line.first_img}}" width="310" height="230" style="display: block;"><span style="font-size: 13px; font-family: Arial; line-height: 18px;"><strong>{{line.first_description}}</strong><br></span></td>
+															<td>&nbsp;&nbsp;&nbsp;</td>
+															{% if not line.second_img or not line.second_description %}
+																<td colspan="1" width="310">&nbsp;&nbsp;&nbsp;</td>
+															{% else %}
+															<td><img src="http://ttango.ru/newsletter/{{data.date}}/{{line.second_img}}" width="310" height="230" style="display: block;"><span style="font-size: 13px; font-family: Arial; line-height: 18px;"><strong>{{line.second_description}}</strong><br></span></td>
+															{% endif %}
+														</tr>
+														<tr>
+															<td colspan="3">&nbsp;</td>
+														</tr>
+														
+														{% endfor %}
+														
+														
+														<tr>
+															<td colspan="3" align="center"><br><a href="http://ttango.ru/search.php?q={{collection.link}}" style="padding: 12px 50px 12px 50px; background-color: #fdb81a; color: #ffffff; font-family: Arial;text-decoration: none; font-weight: bold; border-radius: 30px;" target="_blank">ПЕРЕЙТИ В КАТАЛОГ</a><br><br><br><br></td>
+														</tr>
+														<tr>
+															<td colspan="3">&nbsp;</td>
+														</tr>
+														
+														
+													</tbody>
+												</table>
+											</td>
+											
+											<td style="border-top: 1px solid #E1E1E1;" width="10">&nbsp;</td>
+										</tr>
+										{% endif %}
+										{% endfor %}
+										{# data.collection end #}
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>

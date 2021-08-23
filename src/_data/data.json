@@ -1,0 +1,105 @@
+{
+  "date": "20210309",
+  "main": {
+    "img": "banner-1.jpg",
+    "height": 1200,
+    "description": {
+      "enable": true,
+      "title": "Великолепие узоров в новой коллекции Sauvage",
+      "text": "Коллекция покрывал Tango Sauvage. Это строгость линий, приятная ткань и множество цветовых решений. Потрясающий комплект велюрового покрывала и двух наволочек не оставит без внимания и придаст вашей спальной комнате настоящую роскошь."
+    }
+  },
+  "bg": "bg.gif",
+  "collections": [
+    {
+      "title": "Комплект штор Tango Velluto",
+      "banner": null,
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% хлопок"
+        },
+        {
+          "key": "Материал",
+          "value": "Велюр"
+        }
+      ],
+      "secondary_description": [
+        "Размер: 150x270 (код13003)",
+        "Размер: 150x270 (код13004)"
+      ],
+      "item_lines": [
+        {
+          "first_img": "V150270-01.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-02.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-04.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-05.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-06.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-07.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-08.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        }
+      ],
+      "link": "Velluto"
+    },
+    {
+      "title": "Комплект штор Tango Velluto",
+      "banner": "banner-2.jpg",
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% хлопок"
+        },
+        {
+          "key": "Материал",
+          "value": "Велюр"
+        }
+      ],
+      "secondary_description": [
+        "Размер: 150x270 (код13003)",
+        "Размер: 150x270 (код13004)"
+      ],
+      "item_lines": [
+        {
+          "first_img": "V150270-01.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-02.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-04.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-05.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-06.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "V150270-07.jpg",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        },
+        {
+          "first_img": "V150270-08.jpg",
+          "first_description": "Артикул: V150270-01 КОД13003",
+          "second_img": "",
+          "second_description": "Артикул: V150270-01 КОД13003"
+        }
+      ],
+      "link": "patchwork"
+    }
+  ]
+}
