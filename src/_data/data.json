@@ -11,8 +11,8 @@
   "bg": "bg.jpg",
   "collections": [
     {
-      "title": "Комплект штор Tango Velluto",
-      "banner": "banner-2.jpg",
+      "title": "Tango Lafayette",
+      "banner": "",
       "main_description": [
         {
           "key": "Состав",
@@ -21,10 +21,13 @@
         {
           "key": "Материал",
           "value": "Велюр"
+        },
+        {
+          "key": "Размер",
+          "value": "150х200"
         }
       ],
       "secondary_description": [
-        "Размер: 150x270 (код13003)",
         "Размер: 150x270 (код13004)"
       ],
       "item_lines": [
