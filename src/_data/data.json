@@ -32,31 +32,43 @@
       ],
       "item_lines": [
         {
-          "first_img": "V150270-01.jpg",
-          "first_description": "Артикул: V150270-01 КОД13003",
-          "second_img": "V150270-02.jpg",
-          "second_description": "Артикул: V150270-01 КОД13003"
+          "first_img": "MF2426-71.jpg",
+          "first_description": "Артикул: MF2426-71 КОД2201",
+          "second_img": "MF2426-72.jpg",
+          "second_description": "Артикул: MF2426-72 КОД2201"
         },
         {
-          "first_img": "V150270-04.jpg",
-          "first_description": "Артикул: V150270-01 КОД13003",
-          "second_img": "V150270-05.jpg",
-          "second_description": "Артикул: V150270-01 КОД13003"
-        },
-        {
-          "first_img": "V150270-06.jpg",
-          "first_description": "Артикул: V150270-01 КОД13003",
-          "second_img": "V150270-07.jpg",
-          "second_description": "Артикул: V150270-01 КОД13003"
-        },
-        {
-          "first_img": "V150270-08.jpg",
-          "first_description": "Артикул: V150270-01 КОД13003",
-          "second_img": "",
-          "second_description": "Артикул: V150270-01 КОД13003"
+          "first_img": "MF2426-73.jpg",
+          "first_description": "Артикул: MF2426-73 КОД2201",
+          "second_img": "MF2426-74.jpg",
+          "second_description": "Артикул: MF2426-74 КОД2201"
         }
       ],
-      "link": "patchwork"
+      "link": "MF2426"
+    },
+    {
+      "banner": "banner-2.jpg",
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% полиэстер"
+        },
+        {
+          "key": "Материал",
+          "value": "Микрофибра"
+        }
+      ],
+      "secondary_description": "",
+      "item_lines": [
+        {
+          "first_description": "Артикул: 3014-507",
+          "second_img": "523.jpg",
+          "first_img": "507.jpg",
+          "second_description": "Артикул: 3014-523"
+        }
+      ],
+      "link": "3014-",
+      "title": "Пледы Tango Lindo"
     }
   ]
 }
