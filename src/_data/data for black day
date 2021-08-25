@@ -1,0 +1,74 @@
+{
+  "date": "20210831",
+  "main": {
+    "img": "banner-1.jpg",
+    "description": {
+      "enable": true,
+      "title": "Шаблон данных на случай, если что-то сломается из-за CMS",
+      "text": "Текст новой рассылки, отображается после заголовка"
+    }
+  },
+  "bg": "bg.jpg",
+  "collections": [
+    {
+      "title": "Tango Lafayette",
+      "banner": "",
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% хлопок"
+        },
+        {
+          "key": "Материал",
+          "value": "Велюр"
+        },
+        {
+          "key": "Размер",
+          "value": "150х200"
+        }
+      ],
+      "secondary_description": [
+        "Размер: 150x270 (код13004)"
+      ],
+      "item_lines": [
+        {
+          "first_img": "MF2426-71.jpg",
+          "first_description": "Артикул: MF2426-71 КОД2201",
+          "second_img": "MF2426-72.jpg",
+          "second_description": "Артикул: MF2426-72 КОД2201"
+        },
+        {
+          "first_img": "MF2426-73.jpg",
+          "first_description": "Артикул: MF2426-73 КОД2201",
+          "second_img": "MF2426-74.jpg",
+          "second_description": "Артикул: MF2426-74 КОД2201"
+        }
+      ],
+      "link": "MF2426"
+    },
+    {
+      "banner": "banner-2.jpg",
+      "main_description": [
+        {
+          "key": "Состав",
+          "value": "100% полиэстер"
+        },
+        {
+          "key": "Материал",
+          "value": "Микрофибра"
+        }
+      ],
+      "secondary_description": "",
+      "item_lines": [
+        {
+          "first_description": "Артикул: 3014-507",
+          "second_img": "523.jpg",
+          "first_img": "507.jpg",
+          "second_description": "Артикул: 3014-523"
+        }
+      ],
+      "link": "3014-",
+      "title": "Пледы Tango Lindo"
+    }
+  ]
+}
