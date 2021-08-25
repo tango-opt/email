@@ -5,7 +5,8 @@
   "main": "data.js",
   "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "prettier": "^2.3.2"
   },
   "scripts": {
     "start": "prettier --write ./src/ && eleventy"
