@@ -65,7 +65,7 @@
 										{% if collection.banner %}
 										<tr>
 											<td colspan="3">
-												<img src="//ttango.ru/newsletter/{{ data.date }}/{{ collection.banner }}" width="664">
+												<img src="http://ttango.ru/newsletter/{{ data.date }}/{{ collection.banner }}" width="664">
 											</td>
 										</tr>
 										{% endif %}
@@ -78,8 +78,8 @@
 													<span style="color: #555555; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{ description.key }}:</strong>&nbsp;{{ description.value }}</span>
 												{% endfor %}
 											{% endif %}
-											<br>
 											{% if collection.secondary_description.length > 0 %}
+												<br>
 												{% for line in collection.secondary_description %}
 													<span style="color: #000000; font-size: 13px; font-family: Arial; line-height: 18px;"><br><strong>{{ line }}</strong></span>
 												{% endfor %}
